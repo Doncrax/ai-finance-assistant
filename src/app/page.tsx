@@ -1,12 +1,19 @@
+import styles from "./page.module.css";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-gray-100">
-      <h1 className="text-4xl font-bold text-blue-600">
-        AI Finance Assistant 🚀
-      </h1>
-      <p className="mt-4 text-lg text-gray-700">
-        Welcome! Your journey into AI + Fullstack starts here.
-      </p>
+    <main className={styles.main}>
+      <h1>AI Finance Assistant 💰</h1>
+      <p>Welcome! This will be your smart AI project.</p>
+
+      <section className={styles.section}>
+        <h2>Features coming soon 🚀</h2>
+        <ul className={styles.list}>
+          <li>✔ AI-powered expense tracking</li>
+          <li>✔ Smart savings recommendations</li>
+          <li>✔ Real-time financial insights</li>
+        </ul>
+      </section>
     </main>
   );
 }
